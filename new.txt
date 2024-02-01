@@ -1,0 +1,15 @@
+document.body.style.color = 'newColor';
+
+document.body.style.backgroundColor = 'newColor';
+
+document.querySelector('.header').style.backgroundColor = 'newColor';
+
+document.querySelectorAll('.section1, .section2').forEach(el => el.style.backgroundColor = 'newColor');
+
+document.querySelectorAll('.button').forEach(el => el.style.backgroundColor = 'newColor');
+
+document.querySelector('.footer').style.backgroundColor = 'newColor';
+
+document.querySelector('.navbar').style.backgroundColor = 'newColor';
+// Or, to use CSS variable:
+document.documentElement.style.setProperty('--bg-primary', 'newColor');

@@ -8,9 +8,28 @@
   --transition-speed: 600ms;
 }
 
+@font-face {
+  font-family: 'SuperSexyFont';
+  src: url('../fonts/wf_b141192925a149329c7d2ceb8.woff2') format('woff2');
+  font-weight: normal; /* font-weight: 700; */ 
+  font-style: normal; /* font-style: italic; */
+}
+
+@font-face {
+  font-family: 'SuperSexyFont2';
+  src: url('../fonts/wf_4c51a36aac2c41e3bfb685965.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  font-family: 'SuperSexyFont', 'SuperSexyFont2', Arial, Helvetica, sans-serif;
   color: black;
-  background-color: white;
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -27,9 +46,110 @@ body::-webkit-scrollbar-thumb {
   background: #6649b8;
 }
 
+.navbar::-webkit-scrollbar {
+  width: 0rem;
+}
+
 main {
   margin-left: 5rem;
   padding: 1rem;
+}
+
+.header {
+  text-align: center;
+  background-color: #ff4800;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+
+.section1 {
+  text-align: center;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+.section2 {
+  text-align: center;
+  color: #ffffff;
+  max-width: 100%;
+}
+
+.pic_logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.pic1 {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.pic2 {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.button {
+  font-family: 'SuperSexyFont2';
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #f60404;
+}
+.footer {
+  text-align: center;
+  background-color: #333;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.main-content {
+  background-color: #0026b0;
+  margin: 20px;
+}
+
+.long-text {
+  word-wrap: break-word; /* Older browsers */
+  overflow-wrap: break-word; /* Preferred for newer browsers */
+}
+
+.footer img {
+  max-width: 50px; /* Adjust this value to suit your design */
+  max-height: 50px; /* Adjust this value to suit your design */
+  object-fit: contain;
+  margin: 5px; /* Provides a little space around each image */
+}
+
+.social-icons {
+  border: none;
+  outline: none;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Aligns better with other inline or inline-block elements */
+  line-height: 0; /* Removes white space below icons */
+  font-size: 24px;
+  margin: 10px;
+}
+
+.animate-icon img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.animate-icon:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.srink-font-width {
+  font-size: 18px; /* Default font size */
 }
 
 .navbar {
@@ -122,9 +242,7 @@ main {
   transition: var(--transition-speed);
 }
 
-.navbar:hover .logo svg {
-  transform: rotate(-180deg);
-}
+
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
@@ -132,6 +250,11 @@ main {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    z-index: 1000; /* Add this line */
+  }
+
+  .srink-font-width {
+    font-size: 12px; /* Reduced font size */
   }
 
   .logo {
@@ -157,24 +280,28 @@ main {
     top: 0;
     width: 5rem;
     height: 100vh;
+    z-index: 1000; /* Add this line */
   }
 
-  .navbar:hover {
+  .navbar.expanded {
     width: 16rem;
   }
 
-  .navbar:hover .link-text {
+  /* Adjustments for when navbar is expanded */
+  .navbar.expanded .link-text {
     display: inline;
   }
 
-  .navbar:hover .logo svg
-  {
+  .navbar.expanded .logo svg {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar.expanded .logo-text {
     left: 0px;
+  }
+
+  .navbar.expanded .logo svg {
+    transform: rotate(-180deg);
   }
 }
 

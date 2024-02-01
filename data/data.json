@@ -1,0 +1,27 @@
+{
+    "tokenSymbol": "$PEPZ",
+    "tokenName": "PEPE Pizza",
+    "tokenSupply": "99.000.000.000.000",
+    "tokenDescription": "PEPE Pizza is a community driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, and Burn.",
+    "tokenomics": [
+      "- 500000% burn",
+      "- 16% publics sale",
+      "- 3% owner locked",
+      "- 3% airdrop/competition",
+      "- 4% listing cex",
+      "- 3% marketing"
+    ],
+    "tokenTelegram": "https://t.me/+DTsnzzNFQMFhNjE0",
+    "tokenAddress": "0x0d6ae2a429df13e44a07cd2969e085e4833f64a0",
+    "tokenDexetoolLink": "https://www.dextools.io/app",
+    "tokenUniswapLink": "https://app.uniswap.org/swap",
+    "tokenTwitterLink": "https://twitter.com/Degen782774",
+    "tokenEtherscanlink": "https://etherscan.io",
+    "tokenCalltoActionText": "Join the Fizz! Get your PEPZ now and ride the carbonation to the moon! 🚀🌕 Don't let your portfolio go flat - PEPZ is popping off! 🎉 #FizzToTheMoon #PEPZ 🍾",
+    "tokenDisclaimer": "This token is simply paying homage to a meme we all love and recognize. $PEPZ is a meme coin with no intrinsic value or expectation of financial return. There is no formal team or roadmap. the coin is completely useless and for entertainment purposes only.",
+    "colourBackground": "#260101",
+    "colourSections": "#B71C1C",
+    "navColourPrimary": "#FF8F00",
+    "navColourSecondary": "#FFD600",
+    "scrollbarColour": "#FFAB00"
+}

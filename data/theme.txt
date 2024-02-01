@@ -1,0 +1,28 @@
+Night Theme
+    "colourBackground": "#0A0A0A",
+    "colourSections": "#2B2B2B",
+    "navColourPrimary": "#4C669F",
+    "navColourSecondary": "#380495",
+    "scrollbarColour": "#6E8098"
+
+Ice Theme
+    "colourBackground": "#E0F7FA",
+    "colourSections": "#B2EBF2",
+    "navColourPrimary": "#00ACC1",
+    "navColourSecondary": "#00838F",
+    "scrollbarColour": "#ECEFF1"
+
+Fire Theme
+    "colourBackground": "#260101",
+    "colourSections": "#B71C1C",
+    "navColourPrimary": "#FF8F00",
+    "navColourSecondary": "#FFD600",
+    "scrollbarColour": "#FFAB00"
+
+Green Theme
+    "colourBackground": "#1B5E20",
+    "colourSections": "#4CAF50",
+    "navColourPrimary": "#81C784",
+    "navColourSecondary": "#388E3C",
+    "scrollbarColour": "#A5D6A7"
+
