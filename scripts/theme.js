@@ -49,6 +49,45 @@ fetch('../data/data.json')
       styleSheet.innerText = `body::-webkit-scrollbar-thumb { background: ${data.scrollbarColour}; }`;
       document.head.appendChild(styleSheet);
     }
+
+    function isLightColor(hexColor) {
+      const hex = hexColor.replace('#', '');
+      const r = parseInt(hex.substring(0, 2), 16);
+      const g = parseInt(hex.substring(2, 4), 16);
+      const b = parseInt(hex.substring(4, 6), 16);
+    
+      // Calculate the brightness using a formula
+      const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+      return brightness > 128; // Threshold of 128, can be adjusted
+    }
+    
+    if (data.colourBackground) {
+      const bgColor = data.colourBackground;
+      document.body.style.backgroundColor = bgColor;
+    
+      if (isLightColor(bgColor)) {
+          document.body.classList.add('text-dark');
+          document.body.classList.remove('text-light');
+      } else {
+          document.body.classList.add('text-light');
+          document.body.classList.remove('text-dark');
+      }
+    }
+    
+    if (data.colourSections) {
+      document.querySelectorAll('.main-content').forEach(el => {
+          const sectionColor = data.colourSections;
+          el.style.backgroundColor = sectionColor;
+    
+          if (isLightColor(sectionColor)) {
+              el.classList.add('text-dark');
+              el.classList.remove('text-light');
+          } else {
+              el.classList.add('text-light');
+              el.classList.remove('text-dark');
+          }
+      });
+    }
     
 });
 
