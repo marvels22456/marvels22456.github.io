@@ -106,7 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
               }
           }
       });
-  }, {
+  }, 
+  
+  {
       threshold: 0 // Adjust as needed
   });
 
